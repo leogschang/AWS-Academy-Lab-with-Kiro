@@ -55,6 +55,53 @@ Supplier.getAll = result => {
     });
 };
 
+// Returns a trimmed string truncated to max characters.
+// Non-string values (undefined, array, object) return "".
+Supplier.normalizeParam = (value, max) => {
+    if (typeof value !== "string") return "";
+    return value.trim().slice(0, max);
+};
+
+// Escapes \ % _ so they match literally in LIKE.
+Supplier.escapeLike = (s) => s.replace(/[\\%_]/g, "\\$&");
+
+// criteria: {name, city, state}, already normalized strings.
+// Returns {sql, params}. Only fixed SQL fragments are used; values go in params.
+Supplier.buildSearchQuery = (criteria) => {
+    const where = [];
+    const params = [];
+    if (criteria.name) {
+        where.push("LOWER(name) LIKE LOWER(?) ESCAPE '\\\\'");
+        params.push("%" + Supplier.escapeLike(criteria.name) + "%");
+    }
+    if (criteria.city) {
+        where.push("LOWER(city) = LOWER(?)");
+        params.push(criteria.city);
+    }
+    if (criteria.state) {
+        where.push("LOWER(state) = LOWER(?)");
+        params.push(criteria.state);
+    }
+    let sql = "SELECT * FROM students";
+    if (where.length) {
+        sql += " WHERE " + where.join(" AND ");
+    }
+    return {sql, params};
+};
+
+Supplier.search = (criteria, result) => {
+    const dbConn = Supplier.dbConnect();
+    const {sql, params} = Supplier.buildSearchQuery(criteria);
+    dbConn.query(sql, params, (err, res) => {
+        if (err) {
+            console.log("error: ", err);
+            result(err, null);
+            return;
+        }
+        result(null, res);
+    });
+};
+
 Supplier.findById = (supplierId, result) => {
     const dbConn = Supplier.dbConnect();
     dbConn.query(`SELECT * FROM students WHERE id = ${supplierId}`, (err, res) => {

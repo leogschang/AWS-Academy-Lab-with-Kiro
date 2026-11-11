@@ -1,0 +1,107 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Add jest and fast-check as devDependencies": [
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380292594
+      },
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380302632
+      }
+    ],
+    "2.1 Add `normalizeParam`, `escapeLike`, `buildSearchQuery`, and `search` to `app/models/supplier.model.js`": [
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380294848
+      },
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380303167
+      },
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380372921
+      }
+    ],
+    "2.2 Write property test for `normalizeParam`": [
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380295817
+      }
+    ],
+    "2.3 Write property test for `escapeLike`": [
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380296191
+      }
+    ],
+    "2.4 Write property test for query text independence": [
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380296697
+      }
+    ],
+    "2.5 Write property test for params and unit test for the no-criteria query": [
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380297136
+      }
+    ],
+    "3.1 Change `findAll` in `app/controller/supplier.controller.js`": [
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380297640
+      }
+    ],
+    "3.2 Write property test and unit tests for `findAll`": [
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380298005
+      }
+    ],
+    "4.1 Edit `views/supplier-list-all.html`": [
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380298279
+      },
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380304155
+      },
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380371716
+      }
+    ],
+    "4.2 Write view rendering tests": [
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380298563
+      }
+    ],
+    "5. Checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "d4369746-c6a4-45fb-a4cb-fa938ae08d4c",
+        "chatSessionId": "sess_aae678ac-d060-48fb-9022-356338131110",
+        "timestamp": 1794380298821
+      }
+    ]
+  }
+}
